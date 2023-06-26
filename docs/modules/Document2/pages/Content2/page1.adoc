@@ -1,0 +1,15 @@
+= Page1
+
+
+Special character and symbol replacement is built into Asciidoctor.
+
+While using the Antora Docker image is a convenient way to get up and running quickly, we strongly recommend declaring the dependencies of your site within your playbook project (or extending the Docker image). By doing so, you keep your build self-contained and portable. This is especially important if you rely on additional packages such as the @antora/lunr-extension and asciidoctor-kroki.
+
+== Page1a
+
+With that configuration in place, you can modify your GitLab CI/CD configuration to be based on node:16-alpine, the base image used by Antora Docker. You’ll then need to fetch the dependencies on each build since the base image does not provide Antora.
+
+
+== Page1b
+
+If any of your content repositories are private, you can define a GIT_CREDENTIALS CI/CD variable that holds the credentials to give Antora access to those repositories in this environment. You can set up deploy tokens in your content repository to give the CI/CD pipeline in your playbook project (and thus Antora) read-only access to those repositories.

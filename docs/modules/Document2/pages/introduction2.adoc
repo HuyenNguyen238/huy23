@@ -1,0 +1,8 @@
+= Introduction
+
+
+Why is this the home page of Component B?
+This page is automatically used as the start page of Component B because it is stored in the ROOT module and named index.adoc.
+
+Why is this the home page of the Antora Demo site?
+This page is used as the home page for the Antora Demo because it is assigned as the site start_page in the Demo site’s playbook file site.yml.

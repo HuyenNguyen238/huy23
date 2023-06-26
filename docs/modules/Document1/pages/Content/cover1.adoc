@@ -1,0 +1,3 @@
+= Document1
+
+image::nokialogo.png[align="center"]

@@ -1,0 +1,4 @@
+= Legal
+
+Optional title of sidebar
+Sidebars are used to visually separate short, auxiliary bits of content that supplement the main text.
